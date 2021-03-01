@@ -1,0 +1,708 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Learn Japanese for free, on your own, with the things you love. Acquire with anime, TheMoeWay.">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>Visual Novels on macOS Guide - TheMoeWay</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#7e56c2">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="blue">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#visual-novels-on-macos-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <!--
+  Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Mitigate bug: https://github.com/mkdocs/mkdocs/issues/2191 -->
+
+
+
+<!-- Application header -->
+<header class="md-header" data-md-component="header">
+
+    <!-- Top-level navigation -->
+    <nav class="md-header-nav md-grid" aria-label="Header">
+
+        <!-- Link to home -->
+        <a href=".." title="TheMoeWay" class="md-header-nav__button md-logo"
+            aria-label="TheMoeWay">
+            
+  <img src="../img/moe.svg" alt="logo">
+
+        </a>
+
+        <!-- Button to open drawer -->
+        <label class="md-header-nav__button md-icon" for="__drawer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+        </label>
+
+        <!-- Header title -->
+        <div class="md-header-nav__title" data-md-component="header-title">
+            <div class="md-header-nav__ellipsis">
+                <div class="md-header-nav__topic">
+                    <span class="md-ellipsis">
+                        <a href="..">TheMoeWay</a>
+                    </span>
+                </div>
+                <div class="md-header-nav__topic">
+                    <span class="md-ellipsis">
+                        
+                        Visual Novels on macOS Guide
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button to open search dialogue -->
+        
+        <label class="md-header-nav__button md-icon" for="__search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        </label>
+
+        <!-- Search interface -->
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+
+        <!-- Repository information -->
+        
+    </nav>
+</header> 
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+
+
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TheMoeWay" class="md-nav__button md-logo" aria-label="TheMoeWay">
+      
+  <img src="../img/moe.svg" alt="logo">
+
+    </a>
+    TheMoeWay
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+      
+      <label class="md-nav__link" for="nav-2">
+        Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="nav-2">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/" class="md-nav__link">
+        New Japanese Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speaking/" class="md-nav__link">
+        Speaking Japanese
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../animejp/" class="md-nav__link">
+        Anime Japanese
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kanji/" class="md-nav__link">
+        Learning Kanji
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reading/" class="md-nav__link">
+        Getting into Reading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yomichan/" class="md-nav__link">
+        Yomichan Setup Tutorial
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vn/" class="md-nav__link">
+        Visual Novel Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monolingual/" class="md-nav__link">
+        Monolingual Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        Japanese FAQ
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sub/" class="md-nav__link">
+        Japanese Subtitles
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      
+      <label class="md-nav__link" for="nav-3">
+        Resources
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Resources" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          Resources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+      
+      <label class="md-nav__link" for="nav-4">
+        Other
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Other" data-md-level="1">
+        <label class="md-nav__title" for="nav-4">
+          <span class="md-nav__icon md-icon"></span>
+          Other
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yomicss/" class="md-nav__link">
+        Yomichan Custom CSS
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+      
+      <label class="md-nav__link" for="nav-5">
+        About
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="nav-5">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contact/" class="md-nav__link">
+        Contact & Support
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+    <div class="md-sidebar__scrollwrap">
+        <a href="https://discord.gg/nhqjydaR8j"><img width="100%" src="/img/discord.png"></a>
+        <div class="md-sidebar__inner">
+            
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wine-method-macos-108-1014" class="md-nav__link">
+    WINE Method (macOS 10.8 - 10.14)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-machine-method-macos-1011-112" class="md-nav__link">
+    Virtual Machine Method (macOS 10.11 - 11.2)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dual-boot-using-bootcamp-method-all-intel-based-macs" class="md-nav__link">
+    Dual Boot using Bootcamp Method (All Intel-based Macs)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+        </div>
+    </div>
+</div>
+
+
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="visual-novels-on-macos-guide">Visual Novels on macOS Guide<a class="headerlink" href="#visual-novels-on-macos-guide" title="Permanent link">&para;</a></h1>
+<h3 id="wine-method-macos-108-1014">WINE Method (macOS 10.8 - 10.14)<a class="headerlink" href="#wine-method-macos-108-1014" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Compatibility Issues</p>
+<p>macOS has poor compatibility, therefore this guide may not work for everyone. 
+The best version to use if you want to run VNs with WINE is <strong>macOS High Sierra 10.13.6</strong></p>
+</div>
+<p>WINE, in layman's terms, allows you to run Microsoft Windows apps on your Mac.</p>
+<p><strong>Step 1. Installing Japanese fonts on your Mac.</strong></p>
+<p>You can download all Japanese fonts needed from <a href="https://drive.google.com/file/d/1gOv5Y4eDMtZTFJIXFWY62nFqkmeeBMkD/view?usp=sharing">this archive</a>. Next you need to double click on the archive in Finder, it will extract it into the folder "macOS Japanese Fonts [learnjapanese.moe]"<br />
+Now press <code>⌘+Space</code> to bring up Spotlight Search and search for <em>Font Book.</em> Now click the + button in Font Book, and select the folder <em>macOS Japanese Fonts [learnjapanese.moe]</em> and click <em>Open</em> to install the required fonts.</p>
+<p><strong>Step 2. Using the Terminal and installing Brew</strong></p>
+<p>To make this tutorial easier, we will be using the terminal to install a lot of things. We will need <code>brew</code> which allows you to install things from the terminal.<br />
+Open Spotlight Search using <code>⌘+Space</code> and search for "Terminal" and open it.<br />
+First we need to make sure we can install non App Store verified apps. Type the following command below and hit Return.
+<div class="highlight"><pre><span></span><code>sudo spctl --master-disable
+</code></pre></div>
+Authenciate with the admin password. You can now go in <strong>System Preferences</strong> &gt; <strong>Security &amp; Privacy</strong> &gt; click the <strong>Lock</strong> at the bottom left &gt; choose <strong>Anywhere</strong>.  </p>
+<p>Now go back in the terminal, we will now install <code>brew</code>.  </p>
+<div class="admonition warning">
+<p class="admonition-title">macOS Mojave</p>
+<p>Mojave users need to run <code>gcc</code> in the terminal and install Xcode from there before you run the command below.  </p>
+</div>
+<p>Copy and paste this command and hit Return:<br />
+<div class="highlight"><pre><span></span><code>/bin/bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
+It will ask for your password because it is an administrative action. Hit Return when asked, and install Xcode when prompted.<br />
+When the Xcode installation is complete, press any key. Now we will need to enter our password again to complete the installation of Brew.  </p>
+<div class="admonition warning">
+<p class="admonition-title">macOS High Sierra or older</p>
+<p>Brew no longer supports any version older than Mojave, it may take considerably long to install Brew, or fail entirely on anything older than High Sierra.  </p>
+</div>
+<p><strong>Step 3. Installing WINE and other dependencies</strong>  </p>
+<p>We will install some dependencies using <code>brew</code> first.:<br />
+<div class="highlight"><pre><span></span><code>brew install xquartz zenity giflib libpng gnutls mpg123 libgpg-error libjpeg-turbo sqlite zenity libxcomposite libxinerama libgcrypt ncurses libva gst-plugins-base 
+</code></pre></div></p>
+<div class="admonition warning">
+<p class="admonition-title">macOS High Sierra or older</p>
+<p>It is recommend you install old versions of these packages, or else it will not work.  </p>
+</div>
+<p>Now we will install WINE Staging manually. <a href="https://dl.winehq.org/wine-builds/macosx/pool/winehq-staging-5.7.pkg">You can get the .PKG for Wine Staging here</a>
+Now need to add WINE to our PATH so we can use it in the terminal.<br />
+First we need to open a terminal text editor.<br />
+<div class="highlight"><pre><span></span><code>nano .profile
+</code></pre></div>
+From there we can add the following:<br />
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;/Applications/Wine Staging.app/Contents/Resources/wine/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+<span class="nb">export</span> <span class="nv">FREETYPE_PROPERTIES</span><span class="o">=</span><span class="s2">&quot;truetype:interpreter-version=35&quot;</span>
+<span class="nb">export</span> <span class="nv">DYLD_FALLBACK_LIBRARY_PATH</span><span class="o">=</span><span class="s2">&quot;/usr/lib:/opt/X11/lib:</span><span class="nv">$DYLD_FALLBACK_LIBRARY_PATH</span><span class="s2">&quot;</span>
+</code></pre></div>
+Now press ^X to exit and Y and Return to save.<br />
+Now we will install <code>winetricks</code> which will help us configure WINE. <br />
+<div class="highlight"><pre><span></span><code>brew install winetricks
+</code></pre></div>
+We will now install common dependencies needed by visual novels such as DirectX, Visual C Runtimes and the .NET framework.  </p>
+<div class="admonition failure">
+<p class="admonition-title">macOS Mojave</p>
+<p>WINE on macOS Mojave has APFS errors and does not work at all. There is no workaround. Upgrade to Catalina and compile 64 bit version of WINE or downgrade to High Sierra.</p>
+</div>
+<p><div class="highlight"><pre><span></span><code>winetricks allcodecs d3dx9 dotnet35 dotnet452 vcrun2003 vcrun2005 vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2015
+</code></pre></div>
+Then, we need to disable DLL overrides to make VNs work better.
+<div class="highlight"><pre><span></span><code>winetricks settings <span class="nv">alldlls</span><span class="o">=</span>default
+</code></pre></div></p>
+<p>You need to install Japanese fonts to WINE now. Please download the pack below.<br />
+<a href="https://drive.google.com/file/d/1OiBgAmt3vPRu08gPpxFfzrtDgarBGszK/view?usp=drivesdk">[Google Drive]</a><br />
+Unzip the file and move the font files to your <code>Fonts</code> folder in <code>~/.wine/drive_c/Windows/Fonts</code>   </p>
+<p>Some visual novels require you to have LAVFilters installed. You can find the download below.<br />
+<a href="https://github.com/Nevcairiel/LAVFilters/releases/download/0.74.1/LAVFilters-0.74.1-Installer.exe">[GitHub]</a> 
+To run it, you can double click the <code>.exe</code> or <code>cd</code> to the path it is downloaded to and run <code>wine LAVFilters-0.74.1-Installer.exe</code><br />
+Proceed with the installation.  </p>
+<p><strong>Step 4. CD Emulation</strong><br />
+Some VNs have a form of DRM (Digital Rights Management) that require you to have the original disc inserted in order for it to run.<br />
+We can use a handy application known as ToastMount 2.0 to mount .ISO files as if it were an actual disc in a CD reader. You can download it below.<br />
+<a href="http://prdownloads.sourceforge.net/toastmount/toastmount-2.0.dmg?download">SourceForge</a><br />
+Mount the .DMG file and proceed with the installation.  </p>
+<p><strong>Step 5. Running the installer.</strong></p>
+<p>If your VN comes in an .ISO file, you must mount it using ToastMount 2.0 before preceding. Then you need to <code>cd</code> into where the .ISO is mounted/where the installation files are. In the case of the VN I am using for this tutorial, the installation wizard is <code>Autorun.exe</code>.  <br />
+You can then run:<br />
+<div class="highlight"><pre><span></span><code><span class="nv">LC_ALL</span><span class="o">=</span><span class="s2">&quot;ja_JP.UTF-8&quot;</span> <span class="nv">TZ</span><span class="o">=</span><span class="s2">&quot;Asia/Tokyo&quot;</span> wine Autorun.exe
+</code></pre></div>
+Proceed with the installation. You can reference <a href="https://learnjapanese.moe/vn/#sample-vn-install-windows">Sample VN Install (Windows)</a> if you need help.  </p>
+<p>I installed the game into <code>~/.wine/drive_c/Program Files/KEY/AngelBeats!</code>, and have applied the patch.<br />
+I can run it in WINE by first using <code>cd</code> into that directory, then running the .exe file with the command below.<br />
+<div class="highlight"><pre><span></span><code><span class="nv">LC_ALL</span><span class="o">=</span><span class="s2">&quot;ja_JP.UTF-8&quot;</span> <span class="nv">TZ</span><span class="o">=</span><span class="s2">&quot;Asia/Tokyo&quot;</span> wine SiglusEngine.exe
+</code></pre></div></p>
+<p><strong>Step 6. Texthooking</strong></p>
+<p>Refer to <em><a href="https://learnjapanese.moe/vn/#looking-up-words-in-vns-using-yomichan-and-textractor">Looking up words in VNs using Yomichan and Textractor</a></em>.</p>
+<h3 id="virtual-machine-method-macos-1011-112">Virtual Machine Method (macOS 10.11 - 11.2)<a class="headerlink" href="#virtual-machine-method-macos-1011-112" title="Permanent link">&para;</a></h3>
+<p>It is usually best to do this option with Microsoft Windows 7, as it works on newer Macs and does not have a tedious hacky setup like WINE.</p>
+<p>Search on Google for how to run a Windows virtual machine on your Mac using Parallels (paid) or VirtualBox (free)<br />
+Contact me on Discord if you need help with getting either a Windows XP, 7 or 10 ISO.  </p>
+<h3 id="dual-boot-using-bootcamp-method-all-intel-based-macs">Dual Boot using Bootcamp Method (All Intel-based Macs)<a class="headerlink" href="#dual-boot-using-bootcamp-method-all-intel-based-macs" title="Permanent link">&para;</a></h3>
+<p>All Intel-based Macs are able to run Microsoft Windows, with the exception of Macs that predate 2007. <br />
+If your Mac supports it, I recommend you run Windows 7 instead of Windows 10.  </p>
+<p><strong>Macs that support Windows 7:</strong>  </p>
+<p>Any Intel-based Mac that predates 2014. (With the exception of 2013 Mac Pro)</p>
+<p><strong>Macs that support Windows 10:</strong></p>
+<p>Intel-based MacBook introduced in 2015 or later <br />
+Intel-based MacBook Air introduced in 2012 or later<br />
+Intel-based MacBook Pro introduced in 2012 or later <br />
+Intel-based Mac mini introduced in 2012 or later <br />
+Intel-based iMac introduced in 2012 or later<br />
+Intel-based iMac Pro (all models)  <br />
+Intel-based Mac Pro introduced in 2013 or later     </p>
+<p>Search on Google for how to use Bootcamp on your Mac.
+Contact me on Discord if you need help with getting either a Windows 7 or 10 ISO.  </p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.instant', 'navigation.sections'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
